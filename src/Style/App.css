@@ -1,0 +1,92 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* 
+
+
+/* @import "@Styles/themes/light.css";
+@import "@Styles/themes/dark.css";
+@import "@Styles/modules/index.css"; */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: inherit;
+  background-color: inherit;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #505050;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #505050;
+}
+
+:focus {
+  outline: #a78bf8 auto 1px !important;
+}
+
+input:focus, input:active, button:focus, button:active, select:focus, select:active {
+  outline: none !important;
+}
+
+::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
+
+html, body {
+  font-size: 14px;
+  font-family: "Gochi Hand", sans-serif;
+  background-color: var(--primary-backgroud);
+  color: var(--primary-text-color);
+}
+
+/* Global Classes for easy use */
+
+.z-1000 {
+  z-index: 1000;
+}
+
+.module-app-container {
+  height: calc(100vh - 48px);
+}
+
+.primary-border-color {
+  border-color: var(--primary-border-color);
+}
+
+.widget {
+  background-color: var(--primary-widget-color);
+  box-shadow: 2px 2px 5px var(--widget-shadow), 0 0 0px var(--widget-shadow)!important;
+}
+
+.primary-bg {
+  background-color: var(--primary-backgroud);
+}
